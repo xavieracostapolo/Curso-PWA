@@ -17,6 +17,7 @@ let sumarRapido = (numero) => {
 //sumarLento(5).then( console.log );
 //sumarRapido(10).then( console.log );
 
+//Espera que respondan todas las promesas y despues se escribe la respuesta
 Promise.all([ sumarLento(5), sumarRapido(10) ])
 .then( respuestas => {
     console.log(respuestas);
